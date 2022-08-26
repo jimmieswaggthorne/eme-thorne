@@ -1,0 +1,54 @@
+@keyframes MoveUpDown {
+    0%, 100%{
+    transform: translateY(-5px) 
+}
+50% { 
+    transform: translateY(5px);
+}
+}
+
+@keyframes Flutter {
+    0%,100%{
+        transform: translateY(-5px) scaleX(96%);
+    }
+    50% { 
+        transform: translateY(5px)     scaleX(104%);
+    }
+
+}
+
+.pageOne{
+    position: relative;
+    width: 100%;
+    background-image: url('/assets/images/page-one.png');
+    // 3064 × 4714
+    aspect-ratio: 3064/4714 !important;
+    background-size: cover;
+    height: max-content;
+    box-sizing: border-box;
+    .smoke{
+        position: absolute;
+        background-image: url('/assets/images/page-one-smoke.png');
+        background-size: cover;
+        // 496 × 849
+        aspect-ratio: 496/849;
+        width: calc(100% * 494/3064);
+        top: 9%;
+        left: 45.5%;
+        animation: MoveUpDown 4s ease-in-out infinite;
+    }
+
+    .butterfly{
+        position: absolute;
+        background-image: url('/assets/images/page-one-butterfly.png');
+        background-size: cover;
+        // 424 × 337
+        aspect-ratio: 424/337;
+        width: calc(100% * 424/3064);
+        top: 32%;
+        left: 68%;
+        // &:hover{
+        animation: Flutter 2s ease-in-out infinite;
+        // }
+    }
+}
