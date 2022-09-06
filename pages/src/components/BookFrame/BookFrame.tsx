@@ -47,10 +47,12 @@ const BookFrame = () => {
     },[])
 
     return(
+        <div className={styles.body}>
         <div className={styles.frame}>
          <Cover/>
          <PageOne/>
          <PageTwo/>
+        </div>
         </div>
     )
 }

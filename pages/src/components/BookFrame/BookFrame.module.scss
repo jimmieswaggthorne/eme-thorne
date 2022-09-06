@@ -1,7 +1,5 @@
 .frame{
     transition: all ease-in-out .5s;
-    // height: 100vh;
-    width: calc(100vw - calc(100vw - 100%));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +8,14 @@
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 10px;
-    background-color: black;
     box-sizing: border-box;
+    width: 100%;
+}
 
+.body{
+    width: calc(100vw - (calc(100vw - 100%)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }

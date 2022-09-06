@@ -1,0 +1,16 @@
+.body {
+    width: 100vw;
+    min-height: 100vh;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    svg {
+        width: calc(100vw - 80px);
+        box-sizing: border-box;
+        height: max-content;
+        aspect-ratio: 475/110;
+    }
+}
